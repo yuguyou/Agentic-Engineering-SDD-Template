@@ -363,6 +363,8 @@ The user proactively initiates a reflection; AI reviews the current conversation
 ## IV. SDD Documentation System
 
 > Use structured documents to constrain AI behavior, providing a traceable source of truth for all implementations. This chapter grounds core practices into a specific documentation system.
+> 
+> **Note**: For a quick reference of all documents in this system, please see [agentic_engineering_files.md](agentic_engineering_files.md).
 
 ### 4.1 Five-Stage Overview and Task Complexity Grading
 
