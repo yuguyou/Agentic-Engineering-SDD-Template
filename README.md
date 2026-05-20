@@ -48,27 +48,32 @@ Six core practices are derived from these axioms:
 agentic-engineering/
 ├── README.md                        # This file: project entry point (English)
 ├── README_CN.md                     # 中文版 README
-├── agentic_engineering.md           # Core guide: complete AE+SDD practice manual
-├── agentic_engineering_files.md     # Document guide: quick reference for all documents
-└── templates/                       # Template files: ready-to-use standardized templates
-    ├── template_agents.md           # AGENTS.md template
-    ├── template_constitution.md     # constitution.md template
-    ├── template_readme.md           # README.md template
-    ├── template_spec.md             # spec.md template
-    ├── template_ui-spec.md          # ui-spec.md template
-    ├── template_architecture.md     # architecture.md template
-    ├── template_data-model.md       # data-model.md template
-    ├── template_contracts.md        # contracts/ template
-    ├── template_plan.md             # plan.md template
-    ├── template_decisions.md        # decisions.md template
-    ├── template_roadmap.md          # roadmap.md template
-    ├── template_seed-data.md        # seed-data/ template
-    ├── template_tasks.md            # tasks.md template
-    ├── template_checklist.md        # checklist.md template
-    ├── template_progress.md         # progress.md template
-    ├── template_changelog.md        # changelog.md template
-    ├── template_proposal.md         # proposal.md template
-    └── template_manifest.md         # manifest.md template
+├── en/                              # English documentation
+│   ├── agentic_engineering.md       # Core guide: complete AE+SDD practice manual
+│   ├── agentic_engineering_files.md # Document guide: quick reference for all documents
+│   └── templates/                   # Template files: ready-to-use standardized templates
+│       ├── template_agents.md           # AGENTS.md template
+│       ├── template_constitution.md     # constitution.md template
+│       ├── template_readme.md           # README.md template
+│       ├── template_spec.md             # spec.md template
+│       ├── template_ui-spec.md          # ui-spec.md template
+│       ├── template_architecture.md     # architecture.md template
+│       ├── template_data-model.md       # data-model.md template
+│       ├── template_contracts.md        # contracts/ template
+│       ├── template_plan.md             # plan.md template
+│       ├── template_decisions.md        # decisions.md template
+│       ├── template_roadmap.md          # roadmap.md template
+│       ├── template_seed-data.md        # seed-data/ template
+│       ├── template_tasks.md            # tasks.md template
+│       ├── template_checklist.md        # checklist.md template
+│       ├── template_progress.md         # progress.md template
+│       ├── template_changelog.md        # changelog.md template
+│       ├── template_proposal.md         # proposal.md template
+│       └── template_manifest.md         # manifest.md template
+└── cn/                              # Chinese documentation
+    ├── agentic_engineering.md       # 核心指南：AE+SDD 完整实践手册
+    ├── agentic_engineering_files.md # 文档指南：全部文档的速查参考
+    └── templates/                   # 模板文件 (Chinese counterparts)
 ```
 
 ---
@@ -77,7 +82,7 @@ agentic-engineering/
 
 ### 1. Understand the Framework
 
-Read [`agentic_engineering.md`](agentic_engineering.md) — the core guide covering the following topics:
+Read [`en/agentic_engineering.md`](en/agentic_engineering.md) — the core guide covering the following topics:
 
 - Why the AE + SDD framework is necessary (Chapter 1)
 - Three first-principle axioms (Chapter 2)
@@ -90,7 +95,7 @@ Read [`agentic_engineering.md`](agentic_engineering.md) — the core guide cover
 
 ### 2. Consult the Document Specifications
 
-Refer to [`agentic_engineering_files.md`](agentic_engineering_files.md), which presents each document in tabular form with:
+Refer to [`en/agentic_engineering_files.md`](en/agentic_engineering_files.md), which presents each document in tabular form with:
 
 - Document purpose
 - Core content
@@ -99,13 +104,13 @@ Refer to [`agentic_engineering_files.md`](agentic_engineering_files.md), which p
 
 ### 3. Apply to Your Project
 
-Copy the template files from the `templates/` directory into your target project, then tailor and populate as needed:
+Copy the template files from the `en/templates/` directory into your target project, then tailor and populate as needed:
 
 ```bash
 # Example: initialize the minimum document set for a new project
-cp templates/template_agents.md       your-project/AGENTS.md
-cp templates/template_spec.md         your-project/docs/spec.md
-cp templates/template_tasks.md        your-project/docs/tasks.md
+cp en/templates/template_agents.md       your-project/AGENTS.md
+cp en/templates/template_spec.md         your-project/docs/spec.md
+cp en/templates/template_tasks.md        your-project/docs/tasks.md
 ```
 
 > **Note**: Not all projects require all 18 documents. See Section 7.2, "MVP Minimum Document Set," in the core guide — 4 documents are sufficient to bootstrap a small project.

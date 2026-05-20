@@ -46,28 +46,34 @@
 
 ```
 agentic-engineering/
-├── README.md                        # 本文件：项目入口
-├── agentic_engineering.md           # 核心指南：AE+SDD 完整实践手册
-├── agentic_engineering_files.md     # 文档指南：全部文档的速查参考
-└── templates/                       # 模板文件：开箱即用的标准化模板
-    ├── template_agents.md           # AGENTS.md 模板
-    ├── template_constitution.md     # constitution.md 模板
-    ├── template_readme.md           # README.md 模板
-    ├── template_spec.md             # spec.md 模板
-    ├── template_ui-spec.md          # ui-spec.md 模板
-    ├── template_architecture.md     # architecture.md 模板
-    ├── template_data-model.md       # data-model.md 模板
-    ├── template_contracts.md        # contracts/ 模板
-    ├── template_plan.md             # plan.md 模板
-    ├── template_decisions.md        # decisions.md 模板
-    ├── template_roadmap.md          # roadmap.md 模板
-    ├── template_seed-data.md        # seed-data/ 模板
-    ├── template_tasks.md            # tasks.md 模板
-    ├── template_checklist.md        # checklist.md 模板
-    ├── template_progress.md         # progress.md 模板
-    ├── template_changelog.md        # changelog.md 模板
-    ├── template_proposal.md         # proposal.md 模板
-    └── template_manifest.md         # manifest.md 模板
+├── README.md                        # 英文版 README
+├── README_CN.md                     # 本文件：项目入口
+├── cn/                              # 中文文档
+│   ├── agentic_engineering.md       # 核心指南：AE+SDD 完整实践手册
+│   ├── agentic_engineering_files.md # 文档指南：全部文档的速查参考
+│   └── templates/                   # 模板文件：开箱即用的标准化模板
+│       ├── template_agents.md           # AGENTS.md 模板
+│       ├── template_constitution.md     # constitution.md 模板
+│       ├── template_readme.md           # README.md 模板
+│       ├── template_spec.md             # spec.md 模板
+│       ├── template_ui-spec.md          # ui-spec.md 模板
+│       ├── template_architecture.md     # architecture.md 模板
+│       ├── template_data-model.md       # data-model.md 模板
+│       ├── template_contracts.md        # contracts/ 模板
+│       ├── template_plan.md             # plan.md 模板
+│       ├── template_decisions.md        # decisions.md 模板
+│       ├── template_roadmap.md          # roadmap.md 模板
+│       ├── template_seed-data.md        # seed-data/ 模板
+│       ├── template_tasks.md            # tasks.md 模板
+│       ├── template_checklist.md        # checklist.md 模板
+│       ├── template_progress.md         # progress.md 模板
+│       ├── template_changelog.md        # changelog.md 模板
+│       ├── template_proposal.md         # proposal.md 模板
+│       └── template_manifest.md         # manifest.md 模板
+└── en/                              # 英文文档
+    ├── agentic_engineering.md       # Core guide: complete AE+SDD practice manual
+    ├── agentic_engineering_files.md # Document guide: quick reference for all documents
+    └── templates/                   # Template files (英文对照模板)
 ```
 
 ---
@@ -76,7 +82,7 @@ agentic-engineering/
 
 ### 1. 理解体系
 
-阅读 [`agentic_engineering.md`](agentic_engineering.md)，该文档为核心指南，涵盖以下内容：
+阅读 [`cn/agentic_engineering.md`](cn/agentic_engineering.md)，该文档为核心指南，涵盖以下内容：
 
 - AE + SDD 体系的必要性分析（第一章）
 - 三条第一性原理公理（第二章）
@@ -89,7 +95,7 @@ agentic-engineering/
 
 ### 2. 查阅文档规范
 
-参考 [`agentic_engineering_files.md`](agentic_engineering_files.md)，该文档以表格形式列出每份文档的：
+参考 [`cn/agentic_engineering_files.md`](cn/agentic_engineering_files.md)，该文档以表格形式列出每份文档的：
 
 - 文档作用
 - 核心内容
@@ -98,13 +104,13 @@ agentic-engineering/
 
 ### 3. 在项目中应用
 
-将 `templates/` 目录中的模板文件复制至目标项目，按需裁剪并填充具体内容：
+将 `cn/templates/` 目录中的模板文件复制至目标项目，按需裁剪并填充具体内容：
 
 ```bash
 # 示例：为新项目初始化最小文档集
-cp templates/template_agents.md       your-project/AGENTS.md
-cp templates/template_spec.md         your-project/docs/spec.md
-cp templates/template_tasks.md        your-project/docs/tasks.md
+cp cn/templates/template_agents.md       your-project/AGENTS.md
+cp cn/templates/template_spec.md         your-project/docs/spec.md
+cp cn/templates/template_tasks.md        your-project/docs/tasks.md
 ```
 
 > **提示**：并非所有项目均需全部 18 份文档。详见核心指南第 7.2 节「MVP 最小文档集」，4 份文档即可启动小型项目。
